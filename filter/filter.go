@@ -36,7 +36,7 @@ func (b Blur) Process(srcPath, dstPath string) error {
 	if err != nil {
 		return err
 	}
-	dst := imaging.Blur(src, 3.5)
+	dst := imaging.Blur(src, 15)
 	dstFile, err := os.Create(dstPath)
 	if err != nil {
 		return err
